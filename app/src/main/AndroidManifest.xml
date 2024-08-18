@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DrawingApplication"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".HomeScreenActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".ThemeActivity"
+            android:exported="false" />
+
+        <activity android:name=".ImageDisplayActivity"/>
+
+
+        <!-- provider : controls who can access certain data and files -->
+        <!-- file provider : tool that helps app securely share files w other app -->
+        <!-- authorities : unique identifiier for content provider -->
+        <!-- name : name of the class that implements or extends content provider or pre- defined class like androidx.. one -->
+        <!-- exported : ensures fileprovider is not accessible to other app -->
+        <!-- uriperm : allows fileprovider to grant access to the temporary access to the files -->
+        <!-- meta data : passes additional info -->
+        <!-- md name : fileprovider should look for file path defined in xml res files -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.drawingapplication.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/path" />
+        </provider>
+    </application>
+
+</manifest>

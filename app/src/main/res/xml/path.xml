@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- specifies the path within the external storage where app's files are stored-->
+    <files-path
+        name="drawing_photos"
+        path="." />
+
+        </paths>
+
+    <!--paths : element of 'fileprovide' config  define the paths of files and directories-->
+    <!--path : indicates that the files are stored in the "files" directory in external storage-->
+    <!--<name="captured"
+    path="Android/data/com.example.drawingapplication/files"/>
+    <!- external -path : specifies thw path in external storage-->
+<!--name="drawing_photos"
+        path="drawing_app_photos/" />-->

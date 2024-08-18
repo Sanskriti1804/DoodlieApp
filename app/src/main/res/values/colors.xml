@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="app_bg_color">#9cc3e3</color>
+    <color name="app_font_color">#dd1415</color>
+    <color name="stroke_color">#bebebe</color>
+    <color name="pPink">#fb6f92</color>
+    <color name="pOrange">#ff9770</color>
+    <color name="pYellow">#e9ff70</color>
+    <color name="pRed">#dd1415</color>
+    <color name="pOlive">#ccd5ae</color>
+    <color name="pGreen">#aaf683</color>
+    <color name="pBlue">#70d6ff</color>
+    <color name="pDBlue">#8093f1</color>
+    <color name="pLavender">#cdb4db</color>
+    <color name="pRandom">#d4a373</color>
+
+</resources>
